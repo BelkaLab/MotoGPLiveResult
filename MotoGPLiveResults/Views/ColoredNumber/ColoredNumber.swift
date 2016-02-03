@@ -12,8 +12,22 @@ class ColoredNumber: UIView {
   
   @IBOutlet private weak var numberLabel: UILabel!
   
-  var bgColor: UIColor?
-  var fontColor: UIColor?
+  var bgColor: UIColor? {
+    didSet{
+      if let bgColor = bgColor {
+        self.layer.backgroundColor = bgColor.CGColor
+      }
+    }
+  }
+
+  var fontColor: UIColor? {
+    didSet{
+      if let fontColor = fontColor {
+        numberLabel.textColor = fontColor
+      }
+    }
+  }
+  
   var number: Int? {
     didSet{
       if let number = number {

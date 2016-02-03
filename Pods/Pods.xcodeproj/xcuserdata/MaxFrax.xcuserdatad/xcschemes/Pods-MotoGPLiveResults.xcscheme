@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8EC82422084EC91D8722069F'
+               BlueprintIdentifier = '76931071ECB06EAFE05BBC42'
                BlueprintName = 'Pods-MotoGPLiveResults'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_MotoGPLiveResults.framework'>

@@ -5,6 +5,5 @@ use_frameworks!
 
 target 'MotoGPLiveResults' do
   pod 'Dwifft', '~> 0.3'
-  pod 'Alamofire', '~> 3.1'
 end
 

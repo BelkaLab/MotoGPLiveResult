@@ -7,13 +7,35 @@
 //
 
 import UIKit
+import Dwifft
 
 class LiveResults: UITableViewController {
   
-  private var dataSource = [Rider]()
+  private var dataSource = [Rider]() {
+    didSet {
+      self.diffCalculator?.rows = dataSource
+    }
+  }
+  
+  private var diffCalculator: TableViewDiffCalculator<Rider>?
   
   //Lifecycle methods
   override func viewDidLoad() {
+    setupRefresh()
+    setupTableView()
+    reloadData()
+  }
+  
+  private func setupRefresh() {
+    //lanciare refresh in altro tread
+    NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "reloadData", userInfo: nil, repeats: true)
+  }
+  
+  private func setupTableView() {
+    diffCalculator = TableViewDiffCalculator<Rider>(tableView: self.tableView, initialRows: dataSource)
+  }
+  
+  func reloadData() {
     dataSource = ApiManager.sharedInstance.getRidersChart()
   }
   

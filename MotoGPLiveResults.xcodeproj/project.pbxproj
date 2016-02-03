@@ -215,6 +215,7 @@
 				TargetAttributes = {
 					060E3DBE1C620F5C0053FFC2 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 58M266MW88;
 					};
 				};
 			};
@@ -411,6 +412,7 @@
 			baseConfigurationReference = 251BB95A37BCFDA55A2346D5 /* Pods-MotoGPLiveResults.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MotoGPLiveResults/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.belka.MotoGPLiveResults;
@@ -423,6 +425,7 @@
 			baseConfigurationReference = FC55A6FBCA4B85793FDA8B29 /* Pods-MotoGPLiveResults.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MotoGPLiveResults/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.belka.MotoGPLiveResults;

@@ -7,6 +7,7 @@
 //
 
 import Darwin
+import UIKit
 
 class ApiManager {
   //Shared ApiManager instance
@@ -15,9 +16,11 @@ class ApiManager {
   func getRidersChart() -> [Rider] {
     var mockRidersChart = [Rider]()
     let names = ["Beppe", "Franco", "Giovanni"]
+    let colors: [UIColor] = [.whiteColor(), .blackColor(), .redColor()]
+    let fontColors: [UIColor] = [.yellowColor(), .greenColor(), .blueColor()]
     
     for i in 0...names.count-1 {
-      let rider = Rider(id: i, name: names[i])
+      let rider = Rider(id: i, name: names[i], backgroundColor: colors[i], fontColor: fontColors[i])
       if let  rider = rider {
         mockRidersChart.append(rider)
       }

@@ -19,24 +19,12 @@ class RiderTVCell: UITableViewCell {
     }
   }
   
-  var fontColor: UIColor? {
-    didSet {
-      configureCell()
-    }
-  }
-  
-  var bgColor: UIColor? {
-    didSet {
-      configureCell()
-    }
-  }
-  
   private func configureCell() {
     if let rider = rider {
       labelName.text = rider.name
       numberView.number = rider.id
-      numberView.fontColor = fontColor
-      numberView.bgColor = bgColor
+      numberView.fontColor = rider.fontColor
+      numberView.bgColor = rider.backgroundColor
     }
   }
 }
