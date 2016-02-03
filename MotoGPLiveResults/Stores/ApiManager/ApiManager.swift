@@ -6,6 +6,8 @@
 //  Copyright © 2016 Belka. All rights reserved.
 //
 
+import Darwin
+
 class ApiManager {
   //Shared ApiManager instance
   static var sharedInstance = ApiManager()
@@ -21,6 +23,18 @@ class ApiManager {
       }
     }
     
-    return mockRidersChart
+    return ApiManager.randomArrayOfStuff(mockRidersChart)
+  }
+  
+  //To delete
+  private static func randomArrayOfStuff(riders: [Rider]) -> [Rider] {
+    var possibleStuff = riders
+    for i in 0..<possibleStuff.count - 1 {
+      let j = Int(arc4random_uniform(UInt32(possibleStuff.count - i))) + i
+      if i != j {
+        swap(&possibleStuff[i], &possibleStuff[j])
+      }
+    }
+    return Array(possibleStuff)
   }
 }
