@@ -1,0 +1,13 @@
+PODS:
+  - Alamofire (3.1.5)
+  - Dwifft (0.3.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.1)
+  - Dwifft (~> 0.3)
+
+SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  Dwifft: b7eaeaaf4ac14a2e77b0c661cd1b5524c58fa891
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060E3DC31C620F5D0053FFC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060E3DC21C620F5D0053FFC2 /* AppDelegate.swift */; };
+		060E3DCA1C620F5D0053FFC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 060E3DC91C620F5D0053FFC2 /* Assets.xcassets */; };
+		060E3DCD1C620F5D0053FFC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060E3DCB1C620F5D0053FFC2 /* LaunchScreen.storyboard */; };
+		068C1C201C6213E100D27DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068C1C1F1C6213E100D27DC2 /* Main.storyboard */; };
+		068C1C231C6214AF00D27DC2 /* LiveResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C1C221C6214AF00D27DC2 /* LiveResults.swift */; };
+		068C1C261C62164800D27DC2 /* Rider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C1C251C62164800D27DC2 /* Rider.swift */; };
+		068C1C2C1C6235DF00D27DC2 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C1C2B1C6235DF00D27DC2 /* ApiManager.swift */; };
+		068C1C2E1C62408300D27DC2 /* RiderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C1C2D1C62408300D27DC2 /* RiderTVCell.swift */; };
+		D312F87F2CF28907DDFCE725 /* Pods_MotoGPLiveResults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63F7AE51617FD7F0EC17495 /* Pods_MotoGPLiveResults.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		060E3DBF1C620F5C0053FFC2 /* MotoGPLiveResults.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotoGPLiveResults.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		060E3DC21C620F5D0053FFC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		060E3DC91C620F5D0053FFC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		060E3DCC1C620F5D0053FFC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		060E3DCE1C620F5D0053FFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		068C1C1F1C6213E100D27DC2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		068C1C221C6214AF00D27DC2 /* LiveResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveResults.swift; path = LiveResults/LiveResults.swift; sourceTree = "<group>"; };
+		068C1C251C62164800D27DC2 /* Rider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rider.swift; path = Rider/Rider.swift; sourceTree = "<group>"; };
+		068C1C2B1C6235DF00D27DC2 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiManager.swift; path = ApiManager/ApiManager.swift; sourceTree = "<group>"; };
+		068C1C2D1C62408300D27DC2 /* RiderTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderTVCell.swift; sourceTree = "<group>"; };
+		251BB95A37BCFDA55A2346D5 /* Pods-MotoGPLiveResults.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotoGPLiveResults.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotoGPLiveResults/Pods-MotoGPLiveResults.debug.xcconfig"; sourceTree = "<group>"; };
+		E63F7AE51617FD7F0EC17495 /* Pods_MotoGPLiveResults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotoGPLiveResults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC55A6FBCA4B85793FDA8B29 /* Pods-MotoGPLiveResults.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotoGPLiveResults.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotoGPLiveResults/Pods-MotoGPLiveResults.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		060E3DBC1C620F5C0053FFC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D312F87F2CF28907DDFCE725 /* Pods_MotoGPLiveResults.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0605803F1C6210B7007BD2F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				068C1C241C62161B00D27DC2 /* Rider */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		060580401C6210C3007BD2F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				060580441C6211C4007BD2F4 /* LiveResults */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		060580411C6210D0007BD2F4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				068C1C211C62148600D27DC2 /* LiveResults */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		060580421C6210D9007BD2F4 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				068C1C2A1C6235B500D27DC2 /* ApiManager */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		060580431C6210E3007BD2F4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		060580441C6211C4007BD2F4 /* LiveResults */ = {
+			isa = PBXGroup;
+			children = (
+				068C1C1F1C6213E100D27DC2 /* Main.storyboard */,
+				068C1C2D1C62408300D27DC2 /* RiderTVCell.swift */,
+			);
+			path = LiveResults;
+			sourceTree = "<group>";
+		};
+		060E3DB61C620F5C0053FFC2 = {
+			isa = PBXGroup;
+			children = (
+				060E3DC11C620F5C0053FFC2 /* MotoGPLiveResults */,
+				060E3DC01C620F5C0053FFC2 /* Products */,
+				50FFF3B21C486CB2429A040A /* Pods */,
+				A319400C148C15DD04E08F32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		060E3DC01C620F5C0053FFC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				060E3DBF1C620F5C0053FFC2 /* MotoGPLiveResults.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		060E3DC11C620F5C0053FFC2 /* MotoGPLiveResults */ = {
+			isa = PBXGroup;
+			children = (
+				060580431C6210E3007BD2F4 /* Helpers */,
+				060580421C6210D9007BD2F4 /* Stores */,
+				060580411C6210D0007BD2F4 /* Controllers */,
+				060580401C6210C3007BD2F4 /* Views */,
+				0605803F1C6210B7007BD2F4 /* Models */,
+				060E3DC21C620F5D0053FFC2 /* AppDelegate.swift */,
+				060E3DC91C620F5D0053FFC2 /* Assets.xcassets */,
+				060E3DCB1C620F5D0053FFC2 /* LaunchScreen.storyboard */,
+				060E3DCE1C620F5D0053FFC2 /* Info.plist */,
+			);
+			path = MotoGPLiveResults;
+			sourceTree = "<group>";
+		};
+		068C1C211C62148600D27DC2 /* LiveResults */ = {
+			isa = PBXGroup;
+			children = (
+				068C1C221C6214AF00D27DC2 /* LiveResults.swift */,
+			);
+			name = LiveResults;
+			sourceTree = "<group>";
+		};
+		068C1C241C62161B00D27DC2 /* Rider */ = {
+			isa = PBXGroup;
+			children = (
+				068C1C251C62164800D27DC2 /* Rider.swift */,
+			);
+			name = Rider;
+			sourceTree = "<group>";
+		};
+		068C1C2A1C6235B500D27DC2 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				068C1C2B1C6235DF00D27DC2 /* ApiManager.swift */,
+			);
+			name = ApiManager;
+			sourceTree = "<group>";
+		};
+		50FFF3B21C486CB2429A040A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				251BB95A37BCFDA55A2346D5 /* Pods-MotoGPLiveResults.debug.xcconfig */,
+				FC55A6FBCA4B85793FDA8B29 /* Pods-MotoGPLiveResults.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A319400C148C15DD04E08F32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E63F7AE51617FD7F0EC17495 /* Pods_MotoGPLiveResults.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		060E3DBE1C620F5C0053FFC2 /* MotoGPLiveResults */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 060E3DD11C620F5D0053FFC2 /* Build configuration list for PBXNativeTarget "MotoGPLiveResults" */;
+			buildPhases = (
+				896C9377A60C262ED1F559A0 /* Check Pods Manifest.lock */,
+				060E3DBB1C620F5C0053FFC2 /* Sources */,
+				060E3DBC1C620F5C0053FFC2 /* Frameworks */,
+				060E3DBD1C620F5C0053FFC2 /* Resources */,
+				1987D31DA43F56D1030E400E /* Embed Pods Frameworks */,
+				0BD9D4391F001E095927CF15 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotoGPLiveResults;
+			productName = MotoGPLiveResults;
+			productReference = 060E3DBF1C620F5C0053FFC2 /* MotoGPLiveResults.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		060E3DB71C620F5C0053FFC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Belka;
+				TargetAttributes = {
+					060E3DBE1C620F5C0053FFC2 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 060E3DBA1C620F5C0053FFC2 /* Build configuration list for PBXProject "MotoGPLiveResults" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 060E3DB61C620F5C0053FFC2;
+			productRefGroup = 060E3DC01C620F5C0053FFC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				060E3DBE1C620F5C0053FFC2 /* MotoGPLiveResults */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		060E3DBD1C620F5C0053FFC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068C1C201C6213E100D27DC2 /* Main.storyboard in Resources */,
+				060E3DCD1C620F5D0053FFC2 /* LaunchScreen.storyboard in Resources */,
+				060E3DCA1C620F5D0053FFC2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BD9D4391F001E095927CF15 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotoGPLiveResults/Pods-MotoGPLiveResults-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1987D31DA43F56D1030E400E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotoGPLiveResults/Pods-MotoGPLiveResults-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		896C9377A60C262ED1F559A0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		060E3DBB1C620F5C0053FFC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068C1C2C1C6235DF00D27DC2 /* ApiManager.swift in Sources */,
+				068C1C2E1C62408300D27DC2 /* RiderTVCell.swift in Sources */,
+				068C1C231C6214AF00D27DC2 /* LiveResults.swift in Sources */,
+				060E3DC31C620F5D0053FFC2 /* AppDelegate.swift in Sources */,
+				068C1C261C62164800D27DC2 /* Rider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		060E3DCB1C620F5D0053FFC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				060E3DCC1C620F5D0053FFC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		060E3DCF1C620F5D0053FFC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		060E3DD01C620F5D0053FFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		060E3DD21C620F5D0053FFC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251BB95A37BCFDA55A2346D5 /* Pods-MotoGPLiveResults.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MotoGPLiveResults/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.belka.MotoGPLiveResults;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		060E3DD31C620F5D0053FFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC55A6FBCA4B85793FDA8B29 /* Pods-MotoGPLiveResults.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MotoGPLiveResults/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.belka.MotoGPLiveResults;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		060E3DBA1C620F5C0053FFC2 /* Build configuration list for PBXProject "MotoGPLiveResults" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				060E3DCF1C620F5D0053FFC2 /* Debug */,
+				060E3DD01C620F5D0053FFC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		060E3DD11C620F5D0053FFC2 /* Build configuration list for PBXNativeTarget "MotoGPLiveResults" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				060E3DD21C620F5D0053FFC2 /* Debug */,
+				060E3DD31C620F5D0053FFC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 060E3DB71C620F5C0053FFC2 /* Project object */;
+}
