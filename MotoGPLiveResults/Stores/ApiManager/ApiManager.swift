@@ -12,9 +12,10 @@ class ApiManager {
   
   func getRidersChart() -> [Rider] {
     var mockRidersChart = [Rider]()
+    let names = ["Beppe", "Franco", "Giovanni"]
     
-    for i in 0...10 {
-      let rider = Rider(id: i, name: String(i) + "Franco")
+    for i in 0...names.count-1 {
+      let rider = Rider(id: i, name: names[i])
       if let  rider = rider {
         mockRidersChart.append(rider)
       }

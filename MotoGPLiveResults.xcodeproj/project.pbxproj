@@ -15,6 +15,7 @@
 		068C1C261C62164800D27DC2 /* Rider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C1C251C62164800D27DC2 /* Rider.swift */; };
 		068C1C2C1C6235DF00D27DC2 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C1C2B1C6235DF00D27DC2 /* ApiManager.swift */; };
 		068C1C2E1C62408300D27DC2 /* RiderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C1C2D1C62408300D27DC2 /* RiderTVCell.swift */; };
+		068C1C311C62507F00D27DC2 /* ColoredNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C1C301C62507F00D27DC2 /* ColoredNumber.swift */; };
 		D312F87F2CF28907DDFCE725 /* Pods_MotoGPLiveResults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63F7AE51617FD7F0EC17495 /* Pods_MotoGPLiveResults.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		068C1C251C62164800D27DC2 /* Rider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rider.swift; path = Rider/Rider.swift; sourceTree = "<group>"; };
 		068C1C2B1C6235DF00D27DC2 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiManager.swift; path = ApiManager/ApiManager.swift; sourceTree = "<group>"; };
 		068C1C2D1C62408300D27DC2 /* RiderTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderTVCell.swift; sourceTree = "<group>"; };
+		068C1C301C62507F00D27DC2 /* ColoredNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColoredNumber.swift; path = ColoredNumber/ColoredNumber.swift; sourceTree = "<group>"; };
 		251BB95A37BCFDA55A2346D5 /* Pods-MotoGPLiveResults.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotoGPLiveResults.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotoGPLiveResults/Pods-MotoGPLiveResults.debug.xcconfig"; sourceTree = "<group>"; };
 		E63F7AE51617FD7F0EC17495 /* Pods_MotoGPLiveResults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotoGPLiveResults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC55A6FBCA4B85793FDA8B29 /* Pods-MotoGPLiveResults.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotoGPLiveResults.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotoGPLiveResults/Pods-MotoGPLiveResults.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 		060580401C6210C3007BD2F4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				068C1C2F1C62460A00D27DC2 /* ColoredNumber */,
 				060580441C6211C4007BD2F4 /* LiveResults */,
 			);
 			path = Views;
@@ -150,6 +153,14 @@
 				068C1C2B1C6235DF00D27DC2 /* ApiManager.swift */,
 			);
 			name = ApiManager;
+			sourceTree = "<group>";
+		};
+		068C1C2F1C62460A00D27DC2 /* ColoredNumber */ = {
+			isa = PBXGroup;
+			children = (
+				068C1C301C62507F00D27DC2 /* ColoredNumber.swift */,
+			);
+			name = ColoredNumber;
 			sourceTree = "<group>";
 		};
 		50FFF3B21C486CB2429A040A /* Pods */ = {
@@ -294,6 +305,7 @@
 				068C1C2C1C6235DF00D27DC2 /* ApiManager.swift in Sources */,
 				068C1C2E1C62408300D27DC2 /* RiderTVCell.swift in Sources */,
 				068C1C231C6214AF00D27DC2 /* LiveResults.swift in Sources */,
+				068C1C311C62507F00D27DC2 /* ColoredNumber.swift in Sources */,
 				060E3DC31C620F5D0053FFC2 /* AppDelegate.swift in Sources */,
 				068C1C261C62164800D27DC2 /* Rider.swift in Sources */,
 			);

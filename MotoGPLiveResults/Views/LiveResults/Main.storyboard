@@ -3,34 +3,78 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Live results-->
         <scene sceneID="HJa-z8-TeZ">
             <objects>
                 <tableViewController id="umj-2L-uN5" customClass="LiveResults" customModule="MotoGPLiveResults" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fzp-bi-TnZ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fzp-bi-TnZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RiderCell" id="SZc-lP-tqk" customClass="RiderTVCell" customModule="MotoGPLiveResults" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RiderCell" rowHeight="150" id="SZc-lP-tqk" customClass="RiderTVCell" customModule="MotoGPLiveResults" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SZc-lP-tqk" id="UsQ-f1-MUA">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="149.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVI-qN-OU0">
-                                            <rect key="frame" x="279" y="11" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nso-FW-3d4">
+                                            <rect key="frame" x="72" y="8" width="456" height="134"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aK0-Cm-YVC" customClass="ColoredNumber" customModule="MotoGPLiveResults" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="25" width="80" height="84"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="46" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj4-LG-Ibu">
+                                                            <rect key="frame" x="4" y="6" width="72" height="72"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="aK0-Cm-YVC" secondAttribute="height" multiplier="20:21" id="HWy-qj-5fQ"/>
+                                                        <constraint firstItem="jj4-LG-Ibu" firstAttribute="centerY" secondItem="aK0-Cm-YVC" secondAttribute="centerY" id="Zfa-0h-Mu2"/>
+                                                        <constraint firstItem="jj4-LG-Ibu" firstAttribute="centerX" secondItem="aK0-Cm-YVC" secondAttribute="centerX" id="kYC-8M-zy6"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="numberLabel" destination="jj4-LG-Ibu" id="j6G-mx-1lg"/>
+                                                    </connections>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Yag-kl-WYA">
+                                                    <rect key="frame" x="80" y="47" width="376" height="41"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" misplaced="YES" text="Nome Cognome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVI-qN-OU0">
+                                                            <rect key="frame" x="126" y="0.0" width="125" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovf-1W-EUw">
+                                                            <rect key="frame" x="162" y="21" width="53" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="nso-FW-3d4" firstAttribute="leading" secondItem="UsQ-f1-MUA" secondAttribute="leadingMargin" constant="64" id="Mhr-98-Cnq"/>
+                                        <constraint firstItem="nso-FW-3d4" firstAttribute="bottom" secondItem="UsQ-f1-MUA" secondAttribute="bottomMargin" id="NOG-8o-ynp"/>
+                                        <constraint firstItem="nso-FW-3d4" firstAttribute="top" secondItem="UsQ-f1-MUA" secondAttribute="topMargin" id="mcU-mo-dAg"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nso-FW-3d4" secondAttribute="trailing" constant="64" id="vx7-qX-jWi"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="labelName" destination="PVI-qN-OU0" id="OGp-Is-nV0"/>
+                                    <outlet property="numberView" destination="aK0-Cm-YVC" id="vLt-Rk-NbX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
