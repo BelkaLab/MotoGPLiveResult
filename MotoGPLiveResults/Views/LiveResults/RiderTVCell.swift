@@ -12,6 +12,7 @@ class RiderTVCell: UITableViewCell {
 
   @IBOutlet private weak var labelName: UILabel!
   @IBOutlet private weak var numberView: ColoredNumber!
+  @IBOutlet private weak var lapTimeLabel: UILabel!
   
   var rider: Rider? {
     didSet {
@@ -29,6 +30,7 @@ class RiderTVCell: UITableViewCell {
       numberView.number = rider.id
       numberView.fontColor = rider.fontColor
       numberView.bgColor = rider.backgroundColor
+      lapTimeLabel.text = rider.lapTime?.lapTimeString()
     }
   }
 }

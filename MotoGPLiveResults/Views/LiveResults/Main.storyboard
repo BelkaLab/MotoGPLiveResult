@@ -72,7 +72,7 @@
                                                             </attributedString>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1’46.489" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovf-1W-EUw">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1’46.489" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovf-1W-EUw" userLabel="LapTime Label">
                                                             <rect key="frame" x="0.0" y="36" width="462" height="24"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -95,6 +95,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="labelName" destination="PVI-qN-OU0" id="OGp-Is-nV0"/>
+                                    <outlet property="lapTimeLabel" destination="ovf-1W-EUw" id="WT0-V7-9B0"/>
                                     <outlet property="numberView" destination="aK0-Cm-YVC" id="vLt-Rk-NbX"/>
                                 </connections>
                             </tableViewCell>

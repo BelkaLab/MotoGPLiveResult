@@ -12,7 +12,11 @@ func == (lhs: Rider, rhs: Rider) -> Bool {
   return lhs.id == rhs.id
 }
 
-class Rider: Equatable {
+func < (lhs: Rider, rhs: Rider) -> Bool {
+  return lhs.lapTime < rhs.lapTime
+}
+
+class Rider: Equatable, Comparable {
   
   //Public get fields
   private(set) var id: Int
@@ -20,6 +24,7 @@ class Rider: Equatable {
   private(set) var surname: String
   private(set) var backgroundColor: UIColor
   private(set) var fontColor: UIColor
+  private(set) var lapTime: NSTimeInterval?
   
   //Initializers
   init?(id: Int, name: String, surname: String, backgroundColor: UIColor, fontColor: UIColor) {
@@ -32,5 +37,9 @@ class Rider: Equatable {
     if name.isEmpty || surname.isEmpty {
       return nil
     }
+  }
+  
+  func generateRandomLapTime() {
+    lapTime = Double(arc4random() % 60 + 60)
   }
 }

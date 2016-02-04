@@ -25,10 +25,12 @@ class ApiManager {
       let rider = Rider(id: numbers[i], name: names[i],surname: surnames[i], backgroundColor: colors[i], fontColor: fontColors[i])
       if let  rider = rider {
         mockRidersChart.append(rider)
+        rider.generateRandomLapTime()
       }
     }
+    mockRidersChart.sortInPlace()
     
-    return ApiManager.randomArrayOfStuff(mockRidersChart)
+    return mockRidersChart
   }
   
   //To delete
