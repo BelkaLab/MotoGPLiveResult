@@ -11,26 +11,26 @@
         <scene sceneID="HJa-z8-TeZ">
             <objects>
                 <tableViewController id="umj-2L-uN5" customClass="LiveResults" customModule="MotoGPLiveResults" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fzp-bi-TnZ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fzp-bi-TnZ">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RiderCell" id="SZc-lP-tqk" customClass="RiderTVCell" customModule="MotoGPLiveResults" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="100"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RiderCell" rowHeight="97" id="SZc-lP-tqk" customClass="RiderTVCell" customModule="MotoGPLiveResults" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="SZc-lP-tqk" id="UsQ-f1-MUA">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SZc-lP-tqk" id="UsQ-f1-MUA">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="97"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nso-FW-3d4">
-                                            <rect key="frame" x="29" y="8" width="542" height="60"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nso-FW-3d4">
+                                            <rect key="frame" x="29" y="8" width="542" height="81"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aK0-Cm-YVC" customClass="ColoredNumber" customModule="MotoGPLiveResults" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aK0-Cm-YVC" customClass="ColoredNumber" customModule="MotoGPLiveResults" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="46" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj4-LG-Ibu">
-                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="46" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj4-LG-Ibu">
+                                                            <rect key="frame" x="-5" y="-5" width="60" height="60"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -38,18 +38,29 @@
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="aK0-Cm-YVC" secondAttribute="height" multiplier="1:1" id="3kM-Vk-kJa"/>
+                                                        <constraint firstItem="jj4-LG-Ibu" firstAttribute="leading" secondItem="aK0-Cm-YVC" secondAttribute="leading" id="FgF-cq-0TJ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="jj4-LG-Ibu" secondAttribute="bottom" id="HmE-4e-Ynl"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Xr3-dz-hTc"/>
+                                                        <constraint firstAttribute="trailing" secondItem="jj4-LG-Ibu" secondAttribute="trailing" id="ZYF-Hr-3Yj"/>
                                                         <constraint firstItem="jj4-LG-Ibu" firstAttribute="centerY" secondItem="aK0-Cm-YVC" secondAttribute="centerY" id="Zfa-0h-Mu2"/>
+                                                        <constraint firstItem="jj4-LG-Ibu" firstAttribute="top" secondItem="aK0-Cm-YVC" secondAttribute="top" id="amj-eC-QdW"/>
                                                         <constraint firstItem="jj4-LG-Ibu" firstAttribute="centerX" secondItem="aK0-Cm-YVC" secondAttribute="centerX" id="kYC-8M-zy6"/>
                                                     </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="Zfa-0h-Mu2"/>
+                                                            <exclude reference="kYC-8M-zy6"/>
+                                                        </mask>
+                                                    </variation>
                                                     <connections>
                                                         <outlet property="numberLabel" destination="jj4-LG-Ibu" id="j6G-mx-1lg"/>
                                                     </connections>
                                                 </view>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yag-kl-WYA">
-                                                    <rect key="frame" x="80" y="16" width="462" height="29"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yag-kl-WYA">
+                                                    <rect key="frame" x="101" y="26" width="442" height="29"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVI-qN-OU0">
-                                                            <rect key="frame" x="0.0" y="0.0" width="462" height="29"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVI-qN-OU0">
+                                                            <rect key="frame" x="0.0" y="0.0" width="442" height="29"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="Nome">
                                                                     <attributes>
@@ -77,15 +88,27 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="60" id="4wp-om-Sc6"/>
+                                                <constraint firstItem="aK0-Cm-YVC" firstAttribute="top" secondItem="nso-FW-3d4" secondAttribute="top" id="xhw-fh-W9O"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="4wp-om-Sc6"/>
+                                                </mask>
+                                            </variation>
                                         </stackView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="nso-FW-3d4" firstAttribute="leading" secondItem="UsQ-f1-MUA" secondAttribute="leadingMargin" constant="21" id="Mhr-98-Cnq"/>
-                                        <constraint firstItem="nso-FW-3d4" firstAttribute="bottom" secondItem="UsQ-f1-MUA" secondAttribute="bottomMargin" id="NOG-8o-ynp"/>
+                                        <constraint firstItem="nso-FW-3d4" firstAttribute="bottom" secondItem="UsQ-f1-MUA" secondAttribute="bottomMargin" priority="750" id="NOG-8o-ynp"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="nso-FW-3d4" secondAttribute="bottom" id="XLn-At-wgN"/>
                                         <constraint firstItem="nso-FW-3d4" firstAttribute="top" secondItem="UsQ-f1-MUA" secondAttribute="topMargin" id="mcU-mo-dAg"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="nso-FW-3d4" secondAttribute="trailing" constant="21" id="vx7-qX-jWi"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="NOG-8o-ynp"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="labelName" destination="PVI-qN-OU0" id="OGp-Is-nV0"/>
