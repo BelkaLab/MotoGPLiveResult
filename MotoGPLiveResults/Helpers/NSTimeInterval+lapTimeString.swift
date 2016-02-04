@@ -16,7 +16,9 @@ extension NSTimeInterval {
     let seconds = self - (minutes * 60)
     let intMinutes = Int(minutes)
     
-    output = "\(intMinutes)'\(seconds)"
+    let stringSeconds = (seconds >= 10) ? "\(seconds)" : "0\(seconds)"
+    
+    output = "\(intMinutes)'\(stringSeconds) + Origin: \(self)"
     
     return output
   }
