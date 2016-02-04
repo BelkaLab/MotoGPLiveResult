@@ -33,7 +33,11 @@ class LiveResults: UITableViewController {
   
   override func viewWillDisappear(animated: Bool) {
     super.viewWillDisappear(animated)
-    timer?.invalidate()
+    
+    if let timer = timer {
+      timer.invalidate()
+    }
+    
   }
   
   private func setupRefresh() {

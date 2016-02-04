@@ -25,7 +25,7 @@
 		060E3DC91C620F5D0053FFC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		060E3DCC1C620F5D0053FFC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		060E3DCE1C620F5D0053FFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		068C1C1F1C6213E100D27DC2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		068C1C1F1C6213E100D27DC2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Views/LiveResults/Main.storyboard; sourceTree = "<group>"; };
 		068C1C221C6214AF00D27DC2 /* LiveResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveResults.swift; path = LiveResults/LiveResults.swift; sourceTree = "<group>"; };
 		068C1C251C62164800D27DC2 /* Rider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rider.swift; path = Rider/Rider.swift; sourceTree = "<group>"; };
 		068C1C2B1C6235DF00D27DC2 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiManager.swift; path = ApiManager/ApiManager.swift; sourceTree = "<group>"; };
@@ -68,6 +68,7 @@
 		060580411C6210D0007BD2F4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				068C1C1F1C6213E100D27DC2 /* Main.storyboard */,
 				068C1C211C62148600D27DC2 /* LiveResults */,
 			);
 			path = Controllers;
@@ -91,7 +92,6 @@
 		060580441C6211C4007BD2F4 /* LiveResults */ = {
 			isa = PBXGroup;
 			children = (
-				068C1C1F1C6213E100D27DC2 /* Main.storyboard */,
 				068C1C2D1C62408300D27DC2 /* RiderTVCell.swift */,
 			);
 			path = LiveResults;
