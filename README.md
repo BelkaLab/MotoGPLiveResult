@@ -1,5 +1,5 @@
 # MOTOGP LIVE RESULTS
-![Alt text](http://postimg.org/image/983kh5a1d/)
+![Alt text](http://s16.postimg.org/mc94tu239/Logo.png)
 
 ####What is this?
 This is an iOS 9 project to try [Dwiff](https://github.com/jflinter/Dwifft) library from [jflinter](https://github.com/jflinter).
