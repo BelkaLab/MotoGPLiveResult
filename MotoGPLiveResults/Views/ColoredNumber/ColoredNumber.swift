@@ -15,7 +15,7 @@ class ColoredNumber: UIView {
   var bgColor: UIColor? {
     didSet{
       if let bgColor = bgColor {
-        self.layer.backgroundColor = bgColor.CGColor
+//        self.circleLayer?.backgroundColor = bgColor.CGColor
       }
     }
   }
@@ -36,10 +36,11 @@ class ColoredNumber: UIView {
     }
   }
   
-  override func drawRect(rect: CGRect) {
-    super.drawRect(rect)
-    
-    self.clipsToBounds = true
-    self.layer.cornerRadius = rect.height/2
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+  }
+
+  required init?(coder aDecoder: NSCoder) {
+      super.init(coder: aDecoder)
   }
 }

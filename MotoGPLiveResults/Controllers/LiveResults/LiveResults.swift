@@ -18,17 +18,27 @@ class LiveResults: UITableViewController {
   }
   
   private var diffCalculator: TableViewDiffCalculator<Rider>?
+  private var timer: NSTimer?
   
   //Lifecycle methods
   override func viewDidLoad() {
-    setupRefresh()
     setupTableView()
     reloadData()
   }
   
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    setupRefresh()
+  }
+  
+  override func viewWillDisappear(animated: Bool) {
+    super.viewWillDisappear(animated)
+    timer?.invalidate()
+  }
+  
   private func setupRefresh() {
     //lanciare refresh in altro tread
-    NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "reloadData", userInfo: nil, repeats: true)
+    timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "reloadData", userInfo: nil, repeats: true)
   }
   
   private func setupTableView() {

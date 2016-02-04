@@ -16,7 +16,7 @@ class ApiManager {
   func getRidersChart() -> [Rider] {
     var mockRidersChart = [Rider]()
     let names = ["Beppe", "Franco", "Giovanni"]
-    let colors: [UIColor] = [.whiteColor(), .blackColor(), .redColor()]
+    let colors: [UIColor] = [.magentaColor(), .lightGrayColor(), .redColor()]
     let fontColors: [UIColor] = [.yellowColor(), .greenColor(), .blueColor()]
     
     for i in 0...names.count-1 {
