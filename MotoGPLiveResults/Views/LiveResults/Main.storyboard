@@ -23,10 +23,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="97"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nso-FW-3d4">
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nso-FW-3d4">
                                             <rect key="frame" x="29" y="8" width="542" height="81"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aK0-Cm-YVC" customClass="ColoredNumber" customModule="MotoGPLiveResults" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aK0-Cm-YVC" customClass="ColoredNumber" customModule="MotoGPLiveResults" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="46" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj4-LG-Ibu">
@@ -56,11 +56,11 @@
                                                         <outlet property="numberLabel" destination="jj4-LG-Ibu" id="j6G-mx-1lg"/>
                                                     </connections>
                                                 </view>
-                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yag-kl-WYA">
-                                                    <rect key="frame" x="101" y="26" width="442" height="29"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yag-kl-WYA">
+                                                    <rect key="frame" x="101" y="26" width="441" height="29"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVI-qN-OU0">
-                                                            <rect key="frame" x="0.0" y="0.0" width="442" height="29"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVI-qN-OU0">
+                                                            <rect key="frame" x="0.0" y="0.0" width="441" height="29"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="Nome">
                                                                     <attributes>
