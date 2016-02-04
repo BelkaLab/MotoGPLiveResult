@@ -21,7 +21,7 @@ class RiderTVCell: UITableViewCell {
   
   private func configureCell() {
     if let rider = rider {
-      labelName.text = rider.name
+      labelName.text = rider.name + " " + rider.surname
       numberView.number = rider.id
       numberView.fontColor = rider.fontColor
       numberView.bgColor = rider.backgroundColor

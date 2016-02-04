@@ -15,12 +15,14 @@ class ApiManager {
   
   func getRidersChart() -> [Rider] {
     var mockRidersChart = [Rider]()
-    let names = ["Beppe", "Franco", "Giovanni"]
-    let colors: [UIColor] = [.magentaColor(), .lightGrayColor(), .redColor()]
-    let fontColors: [UIColor] = [.yellowColor(), .greenColor(), .blueColor()]
+    let numbers = [99, 46, 93, 26, 38]
+    let names = ["Jorge", "Valentino", "Marc", "Dani", "Bradlay"]
+    let surnames = ["Lorenzo", "Rossi", "Marquez", "Pedrosa", "Smith"]
+    let colors: [UIColor] = [.cyanColor(), .blueColor(), .redColor(), .redColor(), .blackColor()]
+    let fontColors: [UIColor] = [.redColor(), .yellowColor(), .whiteColor(), .whiteColor(), .orangeColor()]
     
     for i in 0...names.count-1 {
-      let rider = Rider(id: i, name: names[i], backgroundColor: colors[i], fontColor: fontColors[i])
+      let rider = Rider(id: numbers[i], name: names[i],surname: surnames[i], backgroundColor: colors[i], fontColor: fontColors[i])
       if let  rider = rider {
         mockRidersChart.append(rider)
       }

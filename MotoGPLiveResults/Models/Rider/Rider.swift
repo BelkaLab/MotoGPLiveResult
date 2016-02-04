@@ -17,17 +17,19 @@ class Rider: Equatable {
   //Public get fields
   private(set) var id: Int
   private(set) var name: String
+  private(set) var surname: String
   private(set) var backgroundColor: UIColor
   private(set) var fontColor: UIColor
   
   //Initializers
-  init?(id: Int, name: String, backgroundColor: UIColor, fontColor: UIColor) {
+  init?(id: Int, name: String, surname: String, backgroundColor: UIColor, fontColor: UIColor) {
     self.id = id
     self.name = name
+    self.surname = surname
     self.backgroundColor = backgroundColor
     self.fontColor = fontColor
     
-    if name.isEmpty {
+    if name.isEmpty || surname.isEmpty {
       return nil
     }
   }

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MotoGPLiveResults/Models/Rider/Rider.swift"
-            timestampString = "476213011.510074"
+            timestampString = "476268065.666097"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "init(id:name:backgroundColor:fontColor:)"
             landmarkType = "5">
          </BreakpointContent>
