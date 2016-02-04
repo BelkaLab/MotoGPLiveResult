@@ -18,7 +18,7 @@ class ApiManager {
     let numbers = [99, 46, 93, 26, 38]
     let names = ["Jorge", "Valentino", "Marc", "Dani", "Bradlay"]
     let surnames = ["Lorenzo", "Rossi", "Marquez", "Pedrosa", "Smith"]
-    let colors: [UIColor] = [.cyanColor(), .blueColor(), .redColor(), .redColor(), .blackColor()]
+    let colors: [UIColor] = [.blueColor(), .blueColor(), .redColor(), .redColor(), .blackColor()]
     let fontColors: [UIColor] = [.redColor(), .yellowColor(), .whiteColor(), .whiteColor(), .orangeColor()]
     
     for i in 0...names.count-1 {

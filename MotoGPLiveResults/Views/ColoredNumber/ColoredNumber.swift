@@ -15,11 +15,11 @@ class ColoredNumber: UIView {
   var bgColor: UIColor? {
     didSet{
       if let bgColor = bgColor {
-//        self.circleLayer?.backgroundColor = bgColor.CGColor
+        self.circleLayer.backgroundColor = bgColor.CGColor
       }
     }
   }
-
+  
   var fontColor: UIColor? {
     didSet{
       if let fontColor = fontColor {
@@ -36,11 +36,35 @@ class ColoredNumber: UIView {
     }
   }
   
+  private var circleLayer = CALayer()
+  
   override init(frame: CGRect) {
     super.init(frame: frame)
+    setupCircleView()
   }
-
+  
   required init?(coder aDecoder: NSCoder) {
-      super.init(coder: aDecoder)
+    super.init(coder: aDecoder)
+    setupCircleView()
+  }
+  
+  private func setupCircleView() {
+    setCircleView()
+    self.layer.addSublayer(circleLayer)
+  }
+  
+  private func setCircleView() {
+    circleLayer.frame = bounds
+    circleLayer.cornerRadius = frame.height/2.0
+  }
+  
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    setCircleView()
+    if let last = self.subviews.last {
+      if last == numberLabel {
+        self.bringSubviewToFront(numberLabel)
+      }
+    }
   }
 }
