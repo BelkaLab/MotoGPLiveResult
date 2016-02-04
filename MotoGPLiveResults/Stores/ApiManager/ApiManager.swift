@@ -13,24 +13,36 @@ class ApiManager {
   //Shared ApiManager instance
   static var sharedInstance = ApiManager()
   
+  private var dataSource: [Rider]?
+  
   func getRidersChart() -> [Rider] {
-    var mockRidersChart = [Rider]()
-    let numbers = [99, 46, 93, 26, 38]
-    let names = ["Jorge", "Valentino", "Marc", "Dani", "Bradlay"]
-    let surnames = ["Lorenzo", "Rossi", "Marquez", "Pedrosa", "Smith"]
-    let colors: [UIColor] = [.blueColor(), .blueColor(), .redColor(), .redColor(), .blackColor()]
-    let fontColors: [UIColor] = [.redColor(), .yellowColor(), .whiteColor(), .whiteColor(), .orangeColor()]
-    
-    for i in 0...names.count-1 {
-      let rider = Rider(id: numbers[i], name: names[i],surname: surnames[i], backgroundColor: colors[i], fontColor: fontColors[i])
-      if let  rider = rider {
-        mockRidersChart.append(rider)
-        rider.generateRandomLapTime()
+    //If there is an existing datasource I just change one rider lapTime
+    //Else I'm goigng to create a datasource
+    if let dataSource = dataSource {
+      let randomIndex = Int(arc4random()) % dataSource.count
+      dataSource[randomIndex].generateRandomLapTime()
+    }else {
+      //Mock datasource values
+      var mockRidersChart = [Rider]()
+      let numbers = [99, 46, 93, 26, 38]
+      let names = ["Jorge", "Valentino", "Marc", "Dani", "Bradlay"]
+      let surnames = ["Lorenzo", "Rossi", "Marquez", "Pedrosa", "Smith"]
+      let colors: [UIColor] = [.blueColor(), .blueColor(), .redColor(), .redColor(), .blackColor()]
+      let fontColors: [UIColor] = [.redColor(), .yellowColor(), .whiteColor(), .whiteColor(), .orangeColor()]
+      
+      for i in 0...names.count-1 {
+        let rider = Rider(id: numbers[i], name: names[i],surname: surnames[i], backgroundColor: colors[i], fontColor: fontColors[i])
+        if let  rider = rider {
+          mockRidersChart.append(rider)
+        }
       }
+      dataSource = mockRidersChart
     }
-    mockRidersChart.sortInPlace()
     
-    return mockRidersChart
+    dataSource!.sortInPlace { (rider1, rider2) -> Bool in
+      return rider1.lapTime < rider2.lapTime
+    }
+    return dataSource!
   }
   
   //To delete

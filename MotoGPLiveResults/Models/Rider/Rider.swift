@@ -12,11 +12,7 @@ func == (lhs: Rider, rhs: Rider) -> Bool {
   return lhs.id == rhs.id
 }
 
-func < (lhs: Rider, rhs: Rider) -> Bool {
-  return lhs.lapTime < rhs.lapTime
-}
-
-class Rider: Equatable, Comparable {
+class Rider: Equatable {
   
   //Public get fields
   private(set) var id: Int
@@ -33,6 +29,7 @@ class Rider: Equatable, Comparable {
     self.surname = surname
     self.backgroundColor = backgroundColor
     self.fontColor = fontColor
+    self.generateRandomLapTime()
     
     if name.isEmpty || surname.isEmpty {
       return nil
