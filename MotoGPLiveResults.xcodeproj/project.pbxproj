@@ -10,7 +10,6 @@
 		060E3DC31C620F5D0053FFC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060E3DC21C620F5D0053FFC2 /* AppDelegate.swift */; };
 		060E3DCA1C620F5D0053FFC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 060E3DC91C620F5D0053FFC2 /* Assets.xcassets */; };
 		060E3DCD1C620F5D0053FFC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060E3DCB1C620F5D0053FFC2 /* LaunchScreen.storyboard */; };
-		065E31301C635F200075DE32 /* NSTimeInterval+lapTimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065E312F1C635F200075DE32 /* NSTimeInterval+lapTimeString.swift */; };
 		068C1C201C6213E100D27DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068C1C1F1C6213E100D27DC2 /* Main.storyboard */; };
 		068C1C231C6214AF00D27DC2 /* LiveResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C1C221C6214AF00D27DC2 /* LiveResults.swift */; };
 		068C1C261C62164800D27DC2 /* Rider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068C1C251C62164800D27DC2 /* Rider.swift */; };
@@ -26,7 +25,6 @@
 		060E3DC91C620F5D0053FFC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		060E3DCC1C620F5D0053FFC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		060E3DCE1C620F5D0053FFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		065E312F1C635F200075DE32 /* NSTimeInterval+lapTimeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval+lapTimeString.swift"; sourceTree = "<group>"; };
 		068C1C1F1C6213E100D27DC2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		068C1C221C6214AF00D27DC2 /* LiveResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiveResults.swift; path = LiveResults/LiveResults.swift; sourceTree = "<group>"; };
 		068C1C251C62164800D27DC2 /* Rider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rider.swift; path = Rider/Rider.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 		060580431C6210E3007BD2F4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				065E312F1C635F200075DE32 /* NSTimeInterval+lapTimeString.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -308,7 +305,6 @@
 			files = (
 				068C1C2C1C6235DF00D27DC2 /* ApiManager.swift in Sources */,
 				068C1C2E1C62408300D27DC2 /* RiderTVCell.swift in Sources */,
-				065E31301C635F200075DE32 /* NSTimeInterval+lapTimeString.swift in Sources */,
 				068C1C231C6214AF00D27DC2 /* LiveResults.swift in Sources */,
 				068C1C311C62507F00D27DC2 /* ColoredNumber.swift in Sources */,
 				060E3DC31C620F5D0053FFC2 /* AppDelegate.swift in Sources */,

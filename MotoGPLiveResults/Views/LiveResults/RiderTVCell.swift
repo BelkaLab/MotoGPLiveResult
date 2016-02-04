@@ -24,13 +24,12 @@ class RiderTVCell: UITableViewCell {
     if let rider = rider {
       let lightFont = UIFont.systemFontOfSize(24, weight: UIFontWeightLight)
       let mediumFont = UIFont.systemFontOfSize(24, weight: UIFontWeightMedium)
-      var string = NSMutableAttributedString(string: rider.name + " ", attributes: [NSFontAttributeName: lightFont])
+      let string = NSMutableAttributedString(string: rider.name + " ", attributes: [NSFontAttributeName: lightFont])
       string.appendAttributedString(NSAttributedString(string: rider.surname, attributes: [NSFontAttributeName: mediumFont]))
       labelName.attributedText = string
       numberView.number = rider.id
       numberView.fontColor = rider.fontColor
       numberView.bgColor = rider.backgroundColor
-      lapTimeLabel.text = rider.lapTime?.lapTimeString()
     }
   }
 }

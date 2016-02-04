@@ -20,7 +20,6 @@ class Rider: Equatable {
   private(set) var surname: String
   private(set) var backgroundColor: UIColor
   private(set) var fontColor: UIColor
-  private(set) var lapTime: NSTimeInterval?
   
   //Initializers
   init?(id: Int, name: String, surname: String, backgroundColor: UIColor, fontColor: UIColor) {
@@ -29,14 +28,9 @@ class Rider: Equatable {
     self.surname = surname
     self.backgroundColor = backgroundColor
     self.fontColor = fontColor
-    self.generateRandomLapTime()
     
     if name.isEmpty || surname.isEmpty {
       return nil
     }
-  }
-  
-  func generateRandomLapTime() {
-    lapTime = Double(arc4random() % 60 + 60)
   }
 }

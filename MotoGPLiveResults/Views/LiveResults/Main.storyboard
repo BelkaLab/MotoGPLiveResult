@@ -46,36 +46,30 @@
                                                     </connections>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yag-kl-WYA">
-                                                    <rect key="frame" x="80" y="0.0" width="462" height="60"/>
+                                                    <rect key="frame" x="80" y="16" width="462" height="29"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVI-qN-OU0">
-                                                            <rect key="frame" x="0.0" y="0.0" width="462" height="28"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="462" height="29"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="Nome">
                                                                     <attributes>
-                                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <font key="NSFont" size="24" name="HelveticaNeue-Light"/>
                                                                     </attributes>
                                                                 </fragment>
                                                                 <fragment content=" ">
                                                                     <attributes>
-                                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <font key="NSFont" size="24" name="HelveticaNeue"/>
                                                                     </attributes>
                                                                 </fragment>
                                                                 <fragment content="Cognome">
                                                                     <attributes>
-                                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <font key="NSFont" size="24" name="HelveticaNeue-Medium"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1’46.489" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovf-1W-EUw" userLabel="LapTime Label">
-                                                            <rect key="frame" x="0.0" y="36" width="462" height="24"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -95,7 +89,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="labelName" destination="PVI-qN-OU0" id="OGp-Is-nV0"/>
-                                    <outlet property="lapTimeLabel" destination="ovf-1W-EUw" id="WT0-V7-9B0"/>
                                     <outlet property="numberView" destination="aK0-Cm-YVC" id="vLt-Rk-NbX"/>
                                 </connections>
                             </tableViewCell>
