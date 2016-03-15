@@ -2,7 +2,7 @@
 ![Alt text](http://s16.postimg.org/mc94tu239/Logo.png)
 
 ##What is this?
-It's an iOS 9 project to simulate a real-world use case for [Dwiff](https://github.com/jflinter/Dwifft), a library from [jflinter](https://github.com/jflinter).
+It's an iOS 9 project to simulate a real-world use case for [Dwifft](https://github.com/jflinter/Dwifft), a library from [jflinter](https://github.com/jflinter).
 
 ## What does this app do?
 Well, nothing useful ;) It just simulates a Moto GP qualification in real time.
